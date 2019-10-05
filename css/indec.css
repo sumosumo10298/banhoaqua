@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: pink;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo img {
+  height: 100px;
+  width: 300px;
+}
+
+header .container .logo .cart-signup-signin {
+  color: #491975;
+  display: block;
+}
+/*# sourceMappingURL=indec.css.map */

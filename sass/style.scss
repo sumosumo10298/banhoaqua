@@ -1,0 +1,25 @@
+@import './val';
+@import './base/config-web';
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    background:pink ;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            img{
+                height: 100px;
+                width: 300px;
+            }
+            .cart-signup-signin{
+                color:rgb(73, 25, 117); 
+            }
+        }
+
+    }
+}    
