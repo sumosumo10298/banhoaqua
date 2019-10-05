@@ -1,6 +1,10 @@
 @import './val';
 @import './base/config-web';
 
+
+body{
+    background: blueviolet;
+}
 .container{
     max-width: 1200px;
     margin: auto;

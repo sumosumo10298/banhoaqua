@@ -8,19 +8,18 @@ function html() {
     .pipe(dest('build/html'))
 }
 
-function css() {
-  return src('sass/*.sass')
-    .pipe(sass())
-    .pipe(minifyCSS())
-    .pipe(dest('dist/css'))
-}
-
 function js() {
   return src('js/*.js', { sourcemaps: true })
     .pipe(concat('app.min.js'))
     .pipe(dest('js', { sourcemaps: true }))
 }
 
+function css() {
+  return src('sass/*.sass')
+    .pipe(sass())
+    .pipe(minifyCSS())
+    .pipe(dest('css'))
+}
 // watch(['sass/*.scss'],null, css)
 
 exports.js = js;

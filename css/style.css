@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  box-sizing: border-box; }
+
+body {
+  background: blueviolet; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+header {
+  background: pink; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container .logo img {
+      height: 100px;
+      width: 300px; }
+    header .container .logo .cart-signup-signin {
+      color: #491975; }
+
+/*# sourceMappingURL=style.css.map */
