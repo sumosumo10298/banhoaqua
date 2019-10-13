@@ -1,0 +1,98 @@
+.credit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: initial;
+  padding: 40px;
+  .links-signup {
+    display: flex;
+    border-top: 1px solid rgba($color: #333, $alpha: 0.3);
+    border-bottom: 1px solid rgba($color: #333, $alpha: 0.3);
+    padding: 40px 0px;
+    p {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .links {
+      width: 40%;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        li {
+          margin: 3px 0px;
+          a {
+            color: #333;
+            font-size: 15px;
+            &:hover {
+              color: rgba($color: #333, $alpha: 0.3);
+            }
+          }
+        }
+      }
+    }
+    .signup {
+      width: 60%;
+      input {
+        &::placeholder {
+          font-size: 15px;
+        }
+        background: rgba($color: #333, $alpha: 0.1);
+        padding: 15px 10px;
+        width: 80%;
+      }
+      a {
+        border: 2px solid #333;
+        background: #333;
+        color: white;
+        padding: 12px 11px;
+        font-size: 15px;
+        &:hover {
+          background: rgba($color: #333, $alpha: 0.3);
+        }
+      }
+    }
+  }
+  .credit {
+    padding-top: 30px;
+    .emcomerce {
+      p {
+        color: #333;
+        font-size: 13px;
+        a {
+          font-size: 13px;
+          color: #333;
+        }
+      }
+    }
+    .logo {
+      a {
+        font-size: 30px;
+        margin: 0px 3px;
+        &.visa {
+          color: blue;
+        }
+        &.mas {
+          color: red;
+        }
+        &.amex {
+          color: blue;
+        }
+        &.paypal {
+          color: blue;
+        }
+        &.diners {
+          color: blue;
+        }
+        &.discover {
+          color: rgb(187, 187, 38);
+        }
+      }
+    }
+  }
+}

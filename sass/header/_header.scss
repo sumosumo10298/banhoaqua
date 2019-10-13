@@ -1,0 +1,82 @@
+$blue: rgb(49, 47, 214);
+
+header {
+  background: rgb(252, 170, 204);
+  .container {
+    display: flex;
+    flex-direction: column;
+    .top {
+      display: flex;
+      width: 100%;
+      img {
+        height: 180px;
+        width: 500px;
+      }
+      .logo {
+        width: 40%;
+      }
+      .tittle {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .bot {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0px;
+      .seach {
+        margin-left: -550px;
+        border: 1px solid rgba($color: #333, $alpha: 0.1);
+        border-radius: 5px;
+        padding: 10px 14px;
+        input {
+          width: 300px;
+          &:placeholder {
+            color: rgba($color: #333, $alpha: 0.8);
+            font-size: 1px;
+            font-style: italic;
+          }
+        }
+        i {
+          color: black;
+        }
+      }
+      .cart-signup-signin {
+        margin-right: -630px;
+        margin-top: 15px;
+        display: flex;
+        h1{
+            //font-size: 30px;
+           margin-top: -14px;
+            color: rgba($color: #333, $alpha: 0.5)
+        }
+        a {
+          margin-left: 20px;
+          color: black;
+          i {
+            color: $blue;
+            font-size: 15px;
+            margin-right: 7px;
+          }
+          &.cart {
+            margin-right: 20px;
+            margin-top: -14px;
+            border: 2px solid rgba($color: $blue, $alpha: 0.7);
+            border-radius: 3px;
+            padding-right: 17px;
+            i {
+              padding: 9px 14px;
+              font-size: 17px;
+              background: white;
+              margin-right: 15px;
+            }
+          }
+          &.sign-up {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

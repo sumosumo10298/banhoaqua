@@ -1,0 +1,64 @@
+@import "./base/config-web";
+input{
+    border-radius: 2px;
+}
+button{
+    border-radius: 2px;
+    border: none;
+    background: none;
+    outline: none;
+}
+$pink:rgba(pink,0.8);
+$mg: 15px;
+
+.form-wrapper{
+    height: 100vh;
+    background: $pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    form{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 30px;
+        box-shadow: 0px 0px 4px -2px;
+        border-radius:5px; 
+
+        input{
+            margin-bottom:$mg; 
+             padding: $mg/2+1;
+             background:rgba(#333,0.1) ;
+             &:focus{
+                 border: 1px solid rgba($pink, 1.2);
+             }
+        }
+        h1{
+            margin-bottom : $mg;
+        }
+        button{
+            background: rgba($pink, 1.2);
+            color: aliceblue;
+            padding: $mg/2+1;
+            cursor: pointer;
+            &:hover{
+                background: rgba($pink, 3);
+            }
+        }
+        a{
+            color: #333;
+            margin-top:$mg+5; 
+            display: inline-block;
+        }
+    }
+    p.not{
+        color: #333;
+        a{
+            color: red;
+        }
+        margin-top: $mg;
+    }
+}

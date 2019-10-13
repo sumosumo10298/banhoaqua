@@ -1,29 +1,9 @@
-@import './val';
-@import './base/config-web';
-
-
-body{
-    background: blueviolet;
-}
-.container{
-    max-width: 1200px;
-    margin: auto;
-}
-header{
-    background:pink ;
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo{
-            img{
-                height: 100px;
-                width: 300px;
-            }
-            .cart-signup-signin{
-                color:rgb(73, 25, 117); 
-            }
-        }
-
-    }
-}    
+@import "./base/config-web";
+@import "./header/header";
+@import "./menu/menu";
+@import "./hottittle/hottittle";
+@import "./image/image";
+@import "./bestseller/bestseller";
+@import "./blogs/blog";
+@import "./thuonghieu/thuonghieu.scss";
+@import "./footer/footer";

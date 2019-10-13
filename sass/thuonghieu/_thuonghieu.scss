@@ -1,0 +1,27 @@
+.thuonghieu {
+  padding: 0px 80px;
+  padding-top: 70px;
+  .slider {
+    position: relative;
+    img{
+      height: 50px;
+      width: 80px;
+    }
+    .owl-nav {
+      position: absolute;
+      top: 35%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 30px;
+      i {
+        border: 1px;
+        border-radius: 40px;
+        padding: 5px;
+        &:hover{
+          background: rgba($color: #333, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}

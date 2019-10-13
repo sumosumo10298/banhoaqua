@@ -1,0 +1,46 @@
+.border-img {
+  .img {
+    margin-top: 50px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: row-reverse;
+    .image {
+      display: table;
+      position: relative;
+      width: 100%;
+      padding-bottom: 42.2143%;
+      overflow: hidden;
+      img {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+      }
+    }
+    h1 {
+      width: 100%;
+      position: absolute;
+      top: 12%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 5rem;
+      line-height: 1;
+      &.orientals,&.florals{
+        color: aliceblue;
+        top: 40%;
+      }
+    }
+  }
+  p {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 35px;
+  }
+}

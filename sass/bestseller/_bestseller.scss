@@ -1,0 +1,52 @@
+.bestSeller {
+  margin: auto;
+  align-items: center;
+  > p {
+    font-size: 60px;
+    text-align: center;
+    margin:50px 0px 20px 0px;
+  }
+  width: 80%;
+  .allitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 10px;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      a {
+        color: #333;
+      }
+      p {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+      .price-old {
+        p {
+          color: rgba($color: black, $alpha: 0.7);
+          position: relative;
+          padding: 0px 8px;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 20%;
+            height: 2px;
+            background:rgba($color: black, $alpha: 0.4);
+            display: block;
+            left: 40%;
+            top: 50%;
+          }
+        }
+      }
+    }
+  }
+}
